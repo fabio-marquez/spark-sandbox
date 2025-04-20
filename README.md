@@ -5,6 +5,7 @@ Guia de instalação do spark:
 ## 1) Atualizar o java
 
 `sudo apt update`
+
 `sudo apt install openjdk-11-jdk -y`
 
 Verificar com: `java -version`
@@ -13,7 +14,9 @@ Verificar com: `java -version`
 ## 2) Instalar o spark
 
 - Download: `wget https://dlcdn.apache.org/spark/spark-3.5.5/spark-3.5.5-bin-hadoop3.tgz`
+
 - Exportar:
+
     `tar xvf spark-3.5.5-bin-hadoop3.tgz`
 
     `sudo mv spark-3.5.5-bin-hadoop3 /opt/spark`
@@ -33,4 +36,6 @@ Aplicar as alterações: `source ~/.bashrc`
 
 ## 4) Verificar a instalação
 
-`spark-shell`
+`spark-shell` -> Inicia o spark shell com scala
+
+`pyspark` -> Inicia o spark shell com python
